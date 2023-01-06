@@ -1,0 +1,3 @@
+find /home/bsm/test -type f -printf '%TY-%Tm-%Td %TT %p\n' | sort
+bash /home/bsm/test/test.sh
+psql -U postgres -d mydatabase -c "INSERT INTO tablo (Id,DosyaAdi,tarihi,SilinmeTarihi) VALUES (123456,Odev,08/01/2023,30/01/2023)"

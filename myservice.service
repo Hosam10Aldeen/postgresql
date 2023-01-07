@@ -1,0 +1,10 @@
+[Unit]
+Description=My Service
+
+[Service]
+Type=simple
+ExecStart=/path/to/script1
+
+[Install]
+WantedBy=multi-user.target
+
